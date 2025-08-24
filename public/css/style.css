@@ -1,0 +1,197 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* .hsize{
+    border: 2px solid saddlebrown;
+    font-weight: 600;
+    width: 140px;
+    text-align: center;
+}
+.hsize a{
+    width: 100%;
+    font-size: 100%;
+} */
+
+.navbar{
+    background-color: #225470;
+}
+.navbar-brand{
+    font-family: "Ubuntu" ;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.custom-nav .custom-nav-item a{
+    color: white !important;
+}
+.custom-nav-item:hover{
+    background-color: #dc3545;
+    border:1px solid #dc3545;
+    border-radius:7px ;
+}
+
+.vid-parent {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+.remove-vid-marg{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.vid-parent video{
+    margin: 0px;
+    width:100%;
+    height: 100%;
+    object-fit: cover; /* Ensures it fills the box without stretching */
+}
+
+.vid-overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #225470;
+    z-index: 1;
+    opacity: 0.8;
+}
+.vid-content{
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    color: white;
+}
+.vid-content h1.my-content{
+    overflow: hidden;
+    /* keeps on a single line */
+    white-space: nowrap;
+    /* the cursor */
+    /* border-right: 1px solid; */
+   
+    animation: typing 7s steps(22) forwards alternate,
+    blink 2s step-end infinite;
+    animation-iteration-count: infinite;  
+   
+}
+ .vid-content small.my-content{
+    display: inline-block; 
+    overflow: hidden;
+    /* keeps on a single line */
+     white-space: nowrap; 
+    /* the cursor */
+    /* border-right: 1px solid; */
+   
+    animation: typing 7s steps(19) forwards alternate,
+    blink 2s step-end infinite;
+    animation-iteration-count: infinite;  
+   
+} 
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+
+
+.btn{
+    margin-top: 5px;
+}
+.bottom-banner{
+    color: white;
+    padding: 5px;
+}
+
+.Stripe{
+    background-image: linear-gradient(240deg, #ed213a , #93291e);
+    padding: 3rem;
+    height: 13rem;
+    margin-top: 4rem;
+    transform: rotate(10deg);
+    z-index: -5;
+}
+
+
+a.social-hover:hover{
+    padding: 5px 100px;
+    text-decoration: none;
+    background-color: rgb(95, 93, 93);
+}
+
+/* .navbar{
+    transition: all 0.4s;
+    
+}
+.navbar-scroll{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.14);
+    background-color: #225470;
+    height: 70px;
+    
+} */
+
+
+
+
+/* signup page */
+
+.signup-card {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.signup-card h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+
+@media screen and (min-width: 0px ) and (max-width:700px) {
+    .my-content, 
+    .txt-banner{
+        display: none;
+    }
+    .vid-content{
+        top:12%;
+        left:60%;
+    }
+
+    .custom-nav .custom-nav-item a{
+       padding: 10px 20px;
+       background-color: #225470; 
+    }
+    /* .custom-nav-item:hover {
+        background-color: none;
+        border: none;
+        border-radius: none;
+    } */
+}
+
+
+
+
+
+#statusloginmsg small {
+    font-size: 13px;
+}

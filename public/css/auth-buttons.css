@@ -1,0 +1,37 @@
+/* Consistent styling for login and register buttons across all pages */
+.btn-primary {
+    background-color: #c1121f !important;
+    border-color: #c1121f !important;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a10e1a !important;
+    border-color: #a10e1a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(193, 18, 31, 0.3);
+}
+
+/* Ensure all modal buttons have consistent styling */
+.modal .btn-primary {
+    background-color: #c1121f !important;
+    border-color: #c1121f !important;
+}
+
+.modal .btn-primary:hover {
+    background-color: #a10e1a !important;
+    border-color: #a10e1a !important;
+}
+
+/* Login and register buttons in modals */
+#loginModal .btn-primary,
+#registrationModal .btn-primary {
+    background-color: #c1121f !important;
+    border-color: #c1121f !important;
+}
+
+#loginModal .btn-primary:hover,
+#registrationModal .btn-primary:hover {
+    background-color: #a10e1a !important;
+    border-color: #a10e1a !important;
+}

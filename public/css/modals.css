@@ -1,0 +1,102 @@
+/* Centralized Login/Registration Modal Styles - Consistent across all pages */
+
+/* Modal overlay and positioning */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Modal container styling */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+/* Modal header styling */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-title {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Modal body styling */
+.modal-body {
+    padding: 25px;
+}
+
+/* Form styling within modals */
+.modal-body .form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.modal-body .form-control:focus {
+    border-color: #c1121f;
+    box-shadow: 0 0 0 0.2rem rgba(193, 18, 31, 0.25);
+}
+
+/* Checkbox styling */
+.modal-body .form-check-input:checked {
+    background-color: #c1121f;
+    border-color: #c1121f;
+}
+
+/* Button styling - consistent red color */
+.modal .btn-primary {
+    background-color: #c1121f !important;
+    border-color: #c1121f !important;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.modal .btn-primary:hover {
+    background-color: #a10e1a !important;
+    border-color: #a10e1a !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(193, 18, 31, 0.3);
+}
+
+/* Link styling - consistent red color */
+.modal a {
+    color: #c1121f !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.modal a:hover {
+    color: #a10e1a !important;
+    text-decoration: underline;
+}
+
+/* Modal footer styling */
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+}
+
+.modal-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+}
